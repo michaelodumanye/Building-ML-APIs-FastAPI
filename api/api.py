@@ -16,13 +16,22 @@ app = FastAPI(
 )
 
 # Load model components
+# def load_ml_components():
+#     model_components = {
+#         'LGBM': joblib.load('../exports/models/LGBM_best_model.pkl'),
+#         'RandomForest': joblib.load('../exports/models/RandomForest_best_model.pkl'),
+#         'SVM': joblib.load('../exports/models/SVM_best_model.pkl')
+#     }
+#     return model_components
+
 def load_ml_components():
     model_components = {
-        'LGBM': joblib.load('../exports/models/LGBM_best_model.pkl'),
-        'RandomForest': joblib.load('../exports/models/RandomForest_best_model.pkl'),
-        'SVM': joblib.load('../exports/models/SVM_best_model.pkl')
+        'LGBM': joblib.load('exports/models/LGBM_best_model.pkl'),
+        'RandomForest': joblib.load('exports/models/RandomForest_best_model.pkl'),
+        'SVM': joblib.load('exports/models/SVM_best_model.pkl')
     }
     return model_components
+
 
 # Call the model components
 model_components = load_ml_components()
