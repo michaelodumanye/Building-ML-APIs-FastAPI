@@ -70,6 +70,14 @@ Run the FastAPI server: uvicorn api:app --reload
 Build and run Docker container: docker build -t sepsis-prediction-api .
 docker run -p 8000:8000 sepsis-prediction-api
 
+
+![Screenshot 2024-08-27 061937](https://github.com/user-attachments/assets/88af9dec-0098-4005-b629-301ed6f65685)
+
+
+
+![Screenshot 2024-08-27 094151](https://github.com/user-attachments/assets/f0fc1056-3092-4727-aa9a-87466161acb1)
+
+
 ### Usage
 Access the API by navigating to http://localhost:8000/docs in your web browser. Use the provided endpoints to input patient data and receive sepsis predictions.
 
@@ -78,4 +86,9 @@ Contributions are welcome! Please submit a pull request or open an issue to disc
 
 ### License
 This project is licensed under the MIT License
+
+Link to article: https://medium.com/@modumanye/building-machine-learning-apis-with-fastapi-6ebc7cf27421 
+Link to app: https://hub.docker.com/repository/docker/micky1914/michaelodumanye/general
+
+
 
